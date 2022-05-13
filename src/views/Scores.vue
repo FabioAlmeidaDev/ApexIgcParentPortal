@@ -202,7 +202,7 @@
           };
           for( let j=0; j < events.length; j++) {
             const event = events[j];
-            output[key][event] = Number.parseFloat(data[key][event].reduce((a: number, b: number) => a + b, 0) / data[key][event].length).toFixed(3);
+            output[key][event] = (data[key][event].reduce((a: number, b: number) => a + b, 0) / data[key][event].length).toFixed(3);
             
           }
         }
