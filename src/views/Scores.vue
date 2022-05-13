@@ -266,7 +266,7 @@
     },
     async mounted(){
       this.report = [];
-      await axios.post(`http://localhost:3001/scoreTrend/`, {
+      await axios.post(`/scoreTrend/`, {
         token: this.$store.getters.getToken
       })
       .then( async(result)=>{
