@@ -2,7 +2,6 @@ import Vue from 'vue'
 import store from '../store';
 import VueRouter, { RouteConfig } from 'vue-router'
 import Home from "@/views/Home.vue";
-import Skills from "@/views/Skills.vue";
 import Unauthorized from "@/views/Unauthorized.vue";
 import Login from "@/views/Login.vue";
 import Scores from "@/views/Scores.vue";
@@ -11,7 +10,6 @@ import Reset from "@/views/Reset.vue";
 import ResetDo from "@/views/Reset.do.vue";
 import BasicInfo from "@/views/edit/BasicInfo.vue";
 import AddRemoveGymnast from "@/views/edit/AddRemoveGymnast.vue";
-import SocialMedia from "@/views/edit/SocialMedia.vue";
 // Admin Components
 import ManageSkills from "@/views/admin/ManageSkills.vue";
 
@@ -66,15 +64,6 @@ const routes: Array<RouteConfig> = [
     component: Scores,
     meta: {
       title: 'Scores',
-      requireAuth: true
-    },
-  },
-  {
-    path: '/skills',
-    name: 'skills',
-    component: Skills,
-    meta: {
-      title: 'Your Skills',
       requireAuth: true
     },
   },
